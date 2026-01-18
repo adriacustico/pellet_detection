@@ -1,0 +1,25 @@
+# ==============================
+# YOLOv8 Custom Augmentation
+# Dominio: acuicultura / pellets
+# ==============================
+
+# --- Color / iluminación (suave)
+hsv_h: 0.0
+hsv_s: 0.0
+hsv_v: 0.10
+
+# --- Geometría (desactivada)
+degrees: 0.0
+translate: 0.0
+scale: 0.0
+shear: 0.0
+perspective: 0.0
+
+# --- Flips (desactivados por física)
+fliplr: 0.0
+flipud: 0.0
+
+# --- Composición (desactivada)
+mosaic: 0.0
+mixup: 0.0
+copy_paste: 0.0

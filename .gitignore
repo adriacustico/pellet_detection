@@ -1,0 +1,10 @@
+runs/
+venv311/
+data/images/*
+data/labels/*
+data/images_preprocessed/
+data/labels_preprocessed/
+data/train/images/*
+data/train/labels/*
+models/
+*.pt

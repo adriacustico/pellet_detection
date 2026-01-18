@@ -1,0 +1,9 @@
+path: C:/Users/Adrian/Documents/GitCode/VisionComp-2/data
+
+train: train/images
+val: val/images
+
+names:
+  0: salmon
+  1: pellet
+  2: basura
