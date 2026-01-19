@@ -8,10 +8,10 @@ from collections import deque
 # CONFIGURACIÓN
 # =========================
 
-CONF_THRES = 0.25
+CONF_THRES = 0.10
 IOU_THRES = 0.5
 
-PELLET_CLASS_ID = 1
+PELLET_CLASS_ID = 0
 
 TEMPORAL_WINDOW = 5       # frames
 MIN_PERSISTENCE = 2       # detección válida si aparece >= N frames
@@ -99,6 +99,7 @@ def evaluate_video(video_path, model_path):
 
         results = model.predict(
             frame,
+            imgsz=960,
             conf=CONF_THRES,
             iou=IOU_THRES,
             verbose=False

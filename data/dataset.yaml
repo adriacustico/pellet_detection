@@ -4,6 +4,6 @@ train: train/images
 val: val/images
 
 names:
-  0: salmon
-  1: pellet
+  0: pellet
+  1: salmon
   2: basura

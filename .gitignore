@@ -8,3 +8,4 @@ data/train/images/*
 data/train/labels/*
 models/
 *.pt
+*.mp4

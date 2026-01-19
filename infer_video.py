@@ -8,12 +8,12 @@ from collections import deque
 # CONFIGURACIÓN
 # =========================
 
-CONF_THRES = 0.25          # umbral base de confianza
+CONF_THRES = 0.10          # umbral base de confianza
 IOU_THRES = 0.5
 MIN_PERSISTENCE = 2        # frames consecutivos mínimos
 BUFFER_SIZE = 5            # buffer temporal
 
-PELLET_CLASS_ID = 1        # según dataset.yaml
+PELLET_CLASS_ID = 0        # según dataset.yaml
 
 
 # =========================
