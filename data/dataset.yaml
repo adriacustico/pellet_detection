@@ -1,9 +1,12 @@
-#path: C:/Users/... Carpeta local
-path /content/drive/MyDrive/ColabNotebook/pellet_data # Carpeta en Colab
+# data/dataset.yaml
+
+path: /content/drive/MyDrive/ColabNotebooks/data
+
 train: train/images
 val: val/images
 
+nc: 3
 names:
-  0: pellet
-  1: salmon
+  0: salmon
+  1: pellet
   2: basura
