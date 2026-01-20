@@ -1,5 +1,5 @@
-path: C:/Users/Adrian/Documents/GitCode/VisionComp-2/data
-
+#path: C:/Users/... Carpeta local
+path /content/drive/MyDrive/ColabNotebook/pellet_data # Carpeta en Colab
 train: train/images
 val: val/images
 
