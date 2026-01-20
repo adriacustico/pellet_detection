@@ -126,17 +126,17 @@ def run_video_inference(video_path, model_path, output_path=None):
 
         if writer:
             writer.write(frame)
-
-        cv2.imshow("Pellet Detection", frame)
-        if cv2.waitKey(1) & 0xFF == ord("q"):
-            break
+        #Descomentar si se usa en pc local
+        #cv2.imshow("Pellet Detection", frame)
+        #if cv2.waitKey(1) & 0xFF == ord("q"):
+        #    break
 
         frame_idx += 1
 
     cap.release()
     if writer:
         writer.release()
-    cv2.destroyAllWindows()
+    #cv2.destroyAllWindows()
 
 
 # =========================
