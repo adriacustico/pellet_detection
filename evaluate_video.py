@@ -8,7 +8,7 @@ from collections import deque
 # CONFIGURACIÓN
 # =========================
 
-CONF_THRES = 0.10
+CONF_THRES = 0.05
 IOU_THRES = 0.5
 
 PELLET_CLASS_ID = 0
