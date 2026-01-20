@@ -11,7 +11,7 @@ CONF_THRES = 0.05        # bajo para alto recall
 IOU_THRES = 0.5
 IMGSZ = 960
 
-PELLET_CLASS_ID = 1     # AJUSTA si cambia dataset.yaml
+PELLET_CLASS_ID = 0     # AJUSTA si cambia dataset.yaml
 
 # =========================
 # INFERENCIA + TRACKING
