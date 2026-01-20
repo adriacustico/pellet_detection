@@ -8,7 +8,7 @@ from collections import deque
 # CONFIGURACIÓN
 # =========================
 
-CONF_THRES = 0.10          # umbral base de confianza
+CONF_THRES = 0.05          # umbral base de confianza
 IOU_THRES = 0.5
 MIN_PERSISTENCE = 2        # frames consecutivos mínimos
 BUFFER_SIZE = 5            # buffer temporal
@@ -87,6 +87,7 @@ def run_video_inference(video_path, model_path, output_path=None):
 
         results = model.predict(
             frame,
+            imgsz=960,
             conf=CONF_THRES,
             iou=IOU_THRES,
             verbose=False
