@@ -8,12 +8,12 @@ from collections import deque
 # CONFIGURACIÓN
 # =========================
 
-CONF_THRES = 0.05          # umbral base de confianza
+CONF_THRES = 0.25          # umbral base de confianza
 IOU_THRES = 0.5
 MIN_PERSISTENCE = 2        # frames consecutivos mínimos
 BUFFER_SIZE = 5            # buffer temporal
 
-PELLET_CLASS_ID = 0        # según dataset.yaml
+PELLET_CLASS_ID = 1        # según dataset.yaml
 
 
 # =========================
@@ -87,7 +87,6 @@ def run_video_inference(video_path, model_path, output_path=None):
 
         results = model.predict(
             frame,
-            imgsz=960,
             conf=CONF_THRES,
             iou=IOU_THRES,
             verbose=False
@@ -127,17 +126,17 @@ def run_video_inference(video_path, model_path, output_path=None):
 
         if writer:
             writer.write(frame)
-        #Descomentar si se usa en pc local
-        #cv2.imshow("Pellet Detection", frame)
-        #if cv2.waitKey(1) & 0xFF == ord("q"):
-        #    break
+
+        cv2.imshow("Pellet Detection", frame)
+        if cv2.waitKey(1) & 0xFF == ord("q"):
+            break
 
         frame_idx += 1
 
     cap.release()
     if writer:
         writer.release()
-    #cv2.destroyAllWindows()
+    cv2.destroyAllWindows()
 
 
 # =========================
